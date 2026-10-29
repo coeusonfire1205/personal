@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow, noarchive">
+  <title>Make it yours · A little thing, for you</title>
+  <link rel="icon" href="assets/sunflower.svg"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="setup.css">
+  <script src="config.js" defer></script><script src="zip.js" defer></script><script src="setup.js" defer></script>
+</head>
+<body>
+  <header class="masthead"><a class="wordmark" href="index.html"><img src="assets/sunflower.svg" width="34" height="34" alt=""> a little thing, <i>for you.</i></a><span class="setup-tag">MAKE IT YOURS</span></header>
+  <main class="setup-main">
+    <p class="eyebrow">A FEW MEMORIES. ONE VERY SPECIAL WEBSITE.</p>
+    <h1>Add your little<br><em>pieces of us.</em></h1>
+    <p class="setup-intro">Your letter and sunflower are already ready. Add your photos and proposal video, then download your website for Vercel. No code needed.</p>
+    <div class="setup-section">
+      <div class="setup-section-heading"><h2><span>01</span> Your photographs</h2><span id="selected-count">No photos selected</span></div>
+      <label class="upload-area">Choose your photographs <small>JPG, PNG, WebP or AVIF · You can select several at once</small><input type="file" id="photos-input" accept="image/jpeg,image/png,image/webp,image/avif" multiple></label>
+      <p class="setup-tip">Use the arrows to change the order. Add a little caption to each memory.</p>
+      <div id="photo-editor" class="photo-editor"></div>
+    </div>
+    <div class="setup-section">
+      <div class="setup-section-heading"><h2><span>02</span> Your proposal video</h2><span>25 OCTOBER 2026</span></div>
+      <label class="upload-area">Choose your proposal video <small>MP4 with H.264 video + AAC audio works best on phones</small><input type="file" id="video-input" accept="video/mp4,video/webm,video/quicktime"></label>
+      <div id="video-selection" hidden><p id="video-filename"></p><video id="setup-video" controls playsinline preload="metadata"></video><button class="small-action" id="remove-video">Remove video</button></div>
+    </div>
+    <div class="setup-actions"><button class="button secondary" id="preview-button">Preview our story <span>↗</span></button><button class="button primary" id="download-button">Download Vercel-ready ZIP <span>↓</span></button></div>
+    <p class="setup-status" id="setup-status" role="status" aria-live="polite"></p>
+    <p class="setup-tip">Media stays in this browser until you download the ZIP. Keep this page open while previewing; file selections reset when you reload. For a smooth export, keep your total media under 250 MB.</p>
+    <details class="deploy-guide"><summary>How do I put this on Vercel?</summary><ol><li>Download the ZIP, then extract it.</li><li>Create a GitHub repository and upload the extracted files and the assets folder. The index.html file should be at the root.</li><li>In Vercel, choose Add New → Project and import that repository.</li><li>Set Framework Preset to Other. Leave Build Command empty and use . as the Output Directory.</li><li>Deploy, open the live link on your phone to check it, then send it to her. 🌻</li></ol><p>For larger videos that GitHub’s upload page won’t accept, use Git locally or put the video on a host that provides a direct HTTPS video URL and set that URL in config.js. The README includes a Vercel CLI option too.</p><p>The site is excluded from search indexing, but anyone with its URL can open it. Only include media you’re comfortable sharing that way.</p></details>
+    <a class="back-link" href="index.html">← Back to the website</a>
+  </main>
+  <footer class="page-footer"><span>made with love. only for you.</span><span>25.10.26 ♡</span></footer>
+</body>
+</html>

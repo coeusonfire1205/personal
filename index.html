@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f4e9">
+  <meta name="description" content="A little story. A special day. A sunflower, just for you.">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <title>A little thing, for you 🌻</title>
+  <link rel="icon" href="assets/sunflower.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="paper-grain" aria-hidden="true"></div>
+  <header class="masthead">
+    <a class="wordmark" href="#memories" aria-label="Back to our memories"><img src="assets/sunflower.svg" width="34" height="34" alt=""> a little thing, <i>for you.</i></a>
+    <span class="header-note">a beginning worth keeping</span>
+    <span class="tiny-heart" aria-hidden="true">♡</span>
+  </header>
+
+  <main>
+    <section class="chapter memories" id="memories" aria-labelledby="memories-title">
+      <div class="memory-copy">
+        <p class="eyebrow"><span class="small-line"></span> CHAPTER ONE · OUR LITTLE BEGINNING</p>
+        <h1 id="memories-title" tabindex="-1">Somehow,<br>it became <em>you.</em></h1>
+        <p class="intro">A simple conversation.<br>A 7 AM date. And a girl who made<br>the ordinary feel a little more magical.</p>
+        <p class="handwritten">My favourite story is ours.</p>
+        <button class="button primary" data-go="proposal">A day I’ll always remember <span aria-hidden="true">↗</span></button>
+        <p class="button-note">a few memories, then a little surprise</p>
+      </div>
+      <div class="memory-art">
+        <div class="orbit" aria-hidden="true"></div>
+        <div class="gallery" id="gallery" aria-label="Our photographs"></div>
+        <span class="art-note">you + me, and everything in between</span>
+        <span class="art-spark" aria-hidden="true">✳</span>
+      </div>
+      <div class="memory-controls"><button class="round-button" id="prev-photo" aria-label="Previous photographs">←</button><span id="photo-count">01 — 03</span><button class="round-button" id="next-photo" aria-label="Next photographs">→</button></div>
+    </section>
+
+    <section class="chapter proposal" id="proposal" aria-labelledby="proposal-title" hidden>
+      <div class="chapter-topline"><p class="eyebrow">CHAPTER TWO · THE DAY IT BECAME US</p><span>25 / 10 / 2026</span></div>
+      <div class="proposal-heading"><h1 id="proposal-title" tabindex="-1">Remembering the date<br><em>25th October 2026</em></h1><p>One question.<br>My favourite answer.</p></div>
+      <div class="video-shell" id="video-shell">
+        <video id="proposal-video" controls playsinline preload="metadata" hidden aria-label="Our proposal, 25th October 2026"></video>
+        <div class="video-empty" id="video-empty"><span class="video-star" aria-hidden="true">✦</span><span class="play-symbol" aria-hidden="true">▷</span><p>Our very own little movie.</p><span class="missing-media">Add your proposal video on the <a href="setup.html">setup page</a>.</span></div>
+      </div>
+      <div class="proposal-footer"><p class="handwritten">I’d choose that moment all over again.</p><button class="button primary" data-go="sunflower">I have something for you <span aria-hidden="true">↗</span></button></div>
+    </section>
+
+    <section class="chapter sunflower-chapter" id="sunflower" aria-labelledby="sunflower-title" hidden>
+      <p class="eyebrow">CHAPTER THREE · A LITTLE PIECE OF MY HEART</p>
+      <h1 id="sunflower-title" tabindex="-1">For my favourite<br><em>kind of sunshine.</em></h1>
+      <p class="flower-intro">Some feelings need a little more than words.<br>But let me try, baby.</p>
+      <button class="flower-button" id="bloom-button" aria-label="Open the sunflower and read my love letter">
+        <svg class="living-flower" viewBox="0 0 360 405" role="img" aria-label="A sunflower waiting to bloom">
+          <defs>
+            <linearGradient id="petalGold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffe0a0"/><stop offset=".52" stop-color="#e9b34a"/><stop offset="1" stop-color="#b77a25"/></linearGradient>
+            <radialGradient id="seedBrown"><stop stop-color="#86613a"/><stop offset="1" stop-color="#463b24"/></radialGradient>
+            <pattern id="seeds" width="9" height="9" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1.2" fill="#c79a55"/></pattern>
+          </defs>
+          <path class="flower-stem" d="M180 171 Q169 263 186 389" fill="none" stroke="#53613b" stroke-width="7" stroke-linecap="round"/>
+          <path class="flower-leaf leaf-left" d="M179 310 C119 317 104 263 101 249 C151 247 177 274 179 310Z" fill="#64754b"/><path d="M112 260 Q154 282 179 310" fill="none" stroke="#89956b" stroke-width="1.8"/>
+          <path class="flower-leaf leaf-right" d="M179 267 C232 270 251 230 255 213 C208 206 182 231 179 267Z" fill="#7f8b58"/><path d="M244 224 Q209 239 179 267" fill="none" stroke="#a3ab7c" stroke-width="1.8"/>
+          <g id="flower-head" transform="translate(180 148)"><g id="flower-petals"></g><circle r="45" fill="url(#seedBrown)"/><circle r="40" fill="url(#seeds)"/><circle r="34" fill="none" stroke="#a58047" stroke-opacity=".35"/></g>
+        </svg>
+        <span class="flower-hint">tap the sunflower <span aria-hidden="true">↗</span></span>
+      </button>
+      <p class="flower-whisper">a little flower. a whole lot of love.</p>
+    </section>
+
+    <section class="chapter letter-chapter" id="letter" aria-labelledby="letter-title" hidden>
+      <div class="letter-heading"><p class="eyebrow">JUST BETWEEN YOU AND ME</p><img src="assets/sunflower.svg" width="58" height="58" alt="Sunflower"><p class="handwritten">a letter for my baby</p></div>
+      <article class="letter-paper">
+        <span class="letter-date">25 OCTOBER 2026 · OUR LITTLE BEGINNING</span>
+        <h1 id="letter-title" tabindex="-1">Babyyyy ❤️</h1>
+        <div class="letter-body">
+          <p>You know, if someone had told me a few weeks ago that a simple conversation with a girl on Hinge would turn into something this beautiful, I probably would've laughed it off. But then you happened, and somehow, without me even realising it, you became one of the most beautiful parts of my life.</p>
+          <p>From calling you <em>Miss Lawyer</em>, to waking up at 7 in the morning just to see you, to our random conversations, your little nakhre, your endless stories and that confidence of yours that I absolutely adore — somewhere between all of this, I started falling for you. ❤️</p>
+          <p>And you know what I love the most about you? It's how effortlessly you are yourself. That little girl who's so loved and pampered at home, yet carries herself with so much confidence. The old-school soul who loves qawwalis and traditions, but has this beautifully modern way of looking at life. The girl who can talk about absolutely anything and somehow make even the most ordinary conversation feel special.</p>
+          <p>I don't know exactly when it happened, but I started looking forward to your messages, your calls, your random updates about your day, and even the smallest things you wanted to tell me. And somewhere along the way, your happiness started mattering to me just as much as my own.</p>
+          <p>I know we're just beginning our story, and there's still so much left to discover about each other. There'll be beautiful days, silly arguments, misunderstandings, and moments when things won't be perfect. But I want you to know one thing — I'm not someone who wants to disappear when things get difficult. I want to stay, understand you, choose you, and figure things out together.</p>
+          <p>I don't want to promise you a fairytale where everything is perfect. I want something much more real. I want the random drives, the late-night conversations, the stupid jokes, the comfortable silences, the little celebrations, and all those ordinary days that become extraordinary simply because you're there.</p>
+          <p>And baby, I might not always be the best at expressing everything I feel, but I genuinely want to make you feel as loved, appreciated, and special as you deserve to be.</p>
+          <p>You came into my life so unexpectedly, yet now the thought of having you by my side feels so beautifully right.</p>
+          <p>Here's to us, to our little beginning, and to all the memories we haven't made yet. I hope that years from now, we'll look back at our first 7 AM date and smile at how something so simple turned into something so precious.</p>
+          <p>And if there's one thing I want you to never have to question, it's how much you mean to me.</p>
+        </div>
+        <div class="love-signoff"><span aria-hidden="true">♡</span><p>I LOVE YOU,<br><em>BABYYYYY.</em></p><span class="love-emojis">❤️🫶🏻😘</span><small>and this is only the beginning.</small></div>
+      </article>
+      <button class="button secondary replay" data-go="memories">Back to our beginning <span aria-hidden="true">↶</span></button>
+    </section>
+  </main>
+
+  <footer class="page-footer"><span>made with love. only for you.</span><nav aria-label="Our story"><button data-go="memories" aria-current="step"><span>01</span> <span class="nav-name">our memories</span></button><span class="nav-line"></span><button data-go="proposal"><span>02</span> <span class="nav-name">that day</span></button><span class="nav-line"></span><button data-go="sunflower"><span>03</span> <span class="nav-name">for you</span></button></nav><span>25.10.26 <i aria-hidden="true">♡</i></span></footer>
+  <dialog id="photo-dialog" aria-label="Our photograph"><button class="dialog-close" aria-label="Close photograph">×</button><img id="full-photo" alt=""><p id="full-caption"></p></dialog>
+  <div id="petal-shower" aria-hidden="true"></div>
+  <noscript><p class="noscript-note">Please enable JavaScript to open our little story.</p></noscript>
+</body>
+</html>
